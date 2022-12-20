@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+.main-container {
+  border: 4px solid;
+  display: flex;
+  margin: 16px auto ;
+  width: 85%;
+}
+.resume-data {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* HEADER CSS START */
+.resume-data__header {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 32px 32px;
+  width: 100%;
+  background-color: #bdbcd0;
+}
+.resume-data__header__nested_box_1 {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 90%;
+  padding: 32px 32px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.resume-data__header__nested_box_2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border: 3px solid black;
+  width: 90%;
 }
 
-.App-link {
-  color: #61dafb;
+.resume-data__header__name {
+  font-size: 72px;
+  /*padding: 32px 0;*/
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resume-data__header__role {
+  font-size: 32px;
 }
+/* HEADER CSS END */
+
+/* INFO SECTION CSS START */
+.resume-body {
+  display: flex;
+}
+/* INFO SECTION CSS END */

@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Navbar} from "./components/Navbar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <section className="main-container">
+          <div className="resume-data">
+              <section className="resume-data__header">
+                  <div className="resume-data__header__nested_box_1">
+                      <div className="resume-data__header__nested_box_2">
+                          <span className="resume-data__header__name">Durlabh Sharma</span>
+                          <span className="resume-data__header__role">Software Developer</span>
+                      </div>
+                  </div>
+              </section>
+              <section className="resume-body">
+                  <div className="resume-body__personal-info">
+                      ABC
+                  </div>
+                  <div className="resume-body__experience">
+                      TEST
+                  </div>
+              </section>
+          </div>
+      </section>
   );
 }
 
