@@ -1,5 +1,5 @@
 .main-container {
-  border: 4px solid;
+  border: 2px solid;
   display: flex;
   margin: 16px auto ;
   width: 85%;
@@ -17,7 +17,8 @@
   justify-content: center;
   padding: 32px 32px;
   width: 100%;
-  background-color: #bdbcd0;
+  background-color: #a9bbd2;
+  border-bottom: black solid 2px;
 }
 .resume-data__header__nested_box_1 {
   display: flex;
@@ -31,7 +32,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 3px solid black;
+  border: 2px solid black;
   width: 90%;
 }
 
@@ -49,4 +50,28 @@
 .resume-body {
   display: flex;
 }
+
+.resume-body__personal-info {
+  display: flex;
+  flex-grow: 4;
+  background-color: #d9e2ec;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume-body__experience {
+  display: flex;
+  flex-grow: 6;
+}
+
+/* INFO SECTION > CONTACT CSS START */
+.resume-body__personal-info__body__contact {
+  padding: 32px 0;
+}
+.resume-body__personal-info__contact__header {
+  margin-bottom: 8px;
+}
+/* INFO SECTION > CONTACT CSS END */
+
+
 /* INFO SECTION CSS END */
