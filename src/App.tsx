@@ -71,7 +71,10 @@ function App() {
                   </div>
 
                   <div className="resume-body__experience">
-                      <span>TEST</span>
+                      <div className="resume-body__experience__body">
+                          <div className="resume-body__experience__body__header">Experience</div>
+                          
+                      </div>
                   </div>
               </section>
           </div>
