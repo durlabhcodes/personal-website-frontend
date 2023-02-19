@@ -1,10 +1,11 @@
 import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
+import "./AppBootstrap.css";
 export default function AppBootstrap() {
     return (
-        <Container fluid className="justify-content-center border border-3 border-dark">
-            <Container fluid className="bg-dark p-3">
-                <Container className="p-3 bg-white">
+        <Container fluid className="justify-content-center border border-3 border-dark p-0">
+            <Container fluid className="py-3 px-5 mt-0" style={{backgroundColor:"#a9bbd2"}}>
+                <Container fluid className="p-3 bg-white">
                     <Container className="border border-2 border-dark p-5">
                         <Row className="justify-content-center fs-1 fw-bold">
                             Durlabh Sharma
@@ -18,7 +19,7 @@ export default function AppBootstrap() {
 
             </Container>
             <Row className="justify-content-center">
-                <Col>
+                <Col style={{backgroundColor:"#d9e2ec"}}>
                     <Row>
                         <div>Contact</div>
                     </Row>
