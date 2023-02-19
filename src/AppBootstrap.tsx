@@ -7,7 +7,7 @@ export default function AppBootstrap() {
             <Container fluid className="py-3 px-5 mt-0" style={{backgroundColor:"#a9bbd2"}}>
                 <Container fluid className="p-3 bg-white">
                     <Container className="border border-2 border-dark p-5">
-                        <Row className="justify-content-center fs-1 fw-bold">
+                        <Row className="justify-content-center fw-bold" style={{fontFamily:"Merriweather, serif", fontSize:"4.5rem"}}>
                             Durlabh Sharma
                         </Row>
                         <Row className="justify-content-center fs-5">
@@ -20,49 +20,60 @@ export default function AppBootstrap() {
             </Container>
             <Row className="justify-content-center">
                 <Col style={{backgroundColor:"#d9e2ec"}}>
-                    <Row>
-                        <div>Contact</div>
+                    <Row className="personal-info-section">
+                        <div className="section-title">
+                            <span>Contact</span>
+                        </div>
+                        <div>
+                            <i className="bi bi-telephone-forward"></i>
+                            <span>+91-8800339872</span>
+                        </div>
+                        <div>
+                            <i className="bi bi-telephone-forward"></i>
+                            <span>+91-8290377370</span>
+                        </div>
+                        <div>
+                            <i className="bi bi-envelope-at"></i>
+                            <span>sharma.durlabh.93@gmail.com</span>
+                        </div>
                     </Row>
-                    <Row>
-                        <div>+91-8800339872</div>
+                    <Row className="personal-info-section">
+                        <div className="section-title">
+                            <span>Education</span>
+                        </div>
+                        <div>
+                            <div className="fw-bolder education-degree fs-5">B.Tech, Computer Science</div>
+                            <div className="fw-lighter education-degree">2014</div>
+                        </div>
+                        <div>
+                            <div>Rajasthan Technical University, Kota</div>
+                        </div>
                     </Row>
-                    <Row>
-                        <div>+91-8290377370</div>
+                    <Row className="personal-info-section">
+                        <div className="section-title">
+                            <span>Skills</span>
+                        </div>
+                        <Row>
+                            <ul className="m-0">
+                                <li><span className="fw-bold">Languages:</span> Java, Javascript, Python, Go</li>
+                                <li><span className="fw-bold">Frameworks:</span> Spring Framework, Hibernate ORM, Struts Framework</li>
+                                <li><span className="fw-bold">Servers:</span> Tomcat, Pramati, JBoss</li>
+                                <li><span className="fw-bold">Build Tools:</span> Maven, Ant & Gradle</li>
+                                <li><span className="fw-bold">Databases:</span> Mysql, Mongo, Cassandra, Redis, Aerospike</li>
+                            </ul>
+                        </Row>
                     </Row>
-                    <Row>
-                        <div>sharma.durlabh.93@gmail.com</div>
-                    </Row>
-                    <Row>
-                        <div>Education</div>
-                    </Row>
-                    <Row>
-                        <div>B.Tech, Computer Science</div>
-                        <div>2014</div>
-                    </Row>
-                    <Row>
-                        <div>Rajasthan Technical University</div>
-                    </Row>
-                    <Row>
-                        <div>Skills</div>
-                    </Row>
-                    <Row>
-                        <ul>
-                            <li>Languages: Java, Javascript, Python, Go</li>
-                            <li>Frameworks: Spring Framework, Hibernate ORM, Struts Framework</li>
-                            <li>Servers: Tomcat, Pramati, JBoss</li>
-                            <li>Build Tools: Maven, Ant & Gradle</li>
-                            <li>Databases: Mysql, Mongo, Cassandra, Redis, Aerospike</li>
-                        </ul>
-                    </Row>
-                    <Row>
-                        <div>Certifications & Achievements</div>
-                    </Row>
-                    <Row>
-                        <ul>
-                            <li>IELTS – Academic Score: 7.5 bands and CEFR Level: C1</li>
-                            <li>Power Searching with Google</li>
-                            <li>Certified Information Security Professional, Hitesh Choudhary</li>
-                        </ul>
+                    <Row className="personal-info-section">
+                        <div className="section-title">
+                            <span>Certifications & Achievements</span>
+                        </div>
+                        <Row>
+                            <ul>
+                                <li><span className="fw-bold">IELTS</span> – Academic Score: 7.5 bands and CEFR Level: C1</li>
+                                <li><span className="fw-bold">Power Searching with Google</span></li>
+                                <li><span className="fw-bold">Certified Information Security Professional</span>, Hitesh Choudhary</li>
+                            </ul>
+                        </Row>
                     </Row>
                 </Col>
                 <Col>
