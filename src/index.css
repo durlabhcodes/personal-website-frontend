@@ -3,7 +3,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 3rem;
   font-family: 'Merriweather', sans serif !important;
   --bs-body-font-family: 'Merriweather', sans serif !important;
   -webkit-font-smoothing: antialiased;

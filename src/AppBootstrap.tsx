@@ -10,7 +10,7 @@ export default function AppBootstrap() {
                         <Row className="justify-content-center fw-bold" style={{fontFamily:"Merriweather, serif", fontSize:"4.5rem"}}>
                             Durlabh Sharma
                         </Row>
-                        <Row className="justify-content-center fs-5">
+                        <Row className="justify-content-center fs-5 text-uppercase">
                             Software Developer
                         </Row>
                     </Container>
@@ -18,8 +18,8 @@ export default function AppBootstrap() {
                 </Container>
 
             </Container>
-            <Row className="justify-content-center">
-                <Col style={{backgroundColor:"#d9e2ec"}}>
+            <Row className="justify-content-center border-top border-dark">
+                <Col className="border border-top-0 border-bottom-0 border-start-0 border-dark pt-5" style={{backgroundColor:"#d9e2ec"}}>
                     <Row className="personal-info-section">
                         <div className="section-title">
                             <span>Contact</span>
@@ -76,34 +76,34 @@ export default function AppBootstrap() {
                         </Row>
                     </Row>
                 </Col>
-                <Col>
+                <Col className="pt-5">
                     <Row>
-                        <div>Experience</div>
+                        <div className="section-title" style={{marginBottom:"3rem"}}>Experience</div>
                     </Row>
-                    <Row>
-                        <div>Senior Manager | Morgan Stanley</div>
-                        <div>June 2020 – Present</div>
-                        <div>Working on Client Onboarding Project which initiates the onboarding of clients and handles various levels of checks and reviews from various teams driven by workflow management tool as its primary driving engine. Tech stack on Angular 8 and Spring Boot with Mongo as database.</div>
+                    <Row className="mb-4 experience-item">
+                        <div className="experience-title">Senior Manager | Morgan Stanley</div>
+                        <div className="fw-lighter">June 2020 – Present</div>
+                        <div className="lh-base fw-bold">Working on Client Onboarding Project which initiates the onboarding of clients and handles various levels of checks and reviews from various teams driven by workflow management tool as its primary driving engine. Tech stack on Angular 8 and Spring Boot with Mongo as database.</div>
                     </Row>
-                    <Row>
-                        <div>Software Engineer | Priceline, Booking Holdings</div>
-                        <div>Nov 2018 – June 2020</div>
-                        <div>Involved in development of various tools and features for Hotels Team of Priceline.com. Current project involves creating a tool in React-Spring Boot stack which will be used by the team to handle the pricing and managing deals for Priceline Hotels.</div>
+                    <Row className="mb-4 experience-item">
+                        <div className="experience-title">Software Engineer | Priceline, Booking Holdings</div>
+                        <div className="fw-lighter">Nov 2018 – June 2020</div>
+                        <div className="lh-base fw-bold">Involved in development of various tools and features for Hotels Team of Priceline.com. Current project involves creating a tool in React-Spring Boot stack which will be used by the team to handle the pricing and managing deals for Priceline Hotels.</div>
                     </Row>
-                    <Row>
-                        <div>Software Engineer | Paytm, One97</div>
-                        <div>Jan 2017 – Nov 2018</div>
-                        <div>Worked with core development team of Paytm Payments Bank. Debit Card issuance, Offline Cash in/Cash Out, Super Liquid Fixed Deposit, Add Money to Paytm Account via Debit card are few of the various projects I’ve worked upon at Paytm Payments Bank.</div>
+                    <Row className="mb-4 experience-item">
+                        <div className="experience-title">Software Engineer | Paytm, One97</div>
+                        <div className="fw-lighter">Jan 2017 – Nov 2018</div>
+                        <div className="lh-base fw-bold">Worked with core development team of Paytm Payments Bank. Debit Card issuance, Offline Cash in/Cash Out, Super Liquid Fixed Deposit, Add Money to Paytm Account via Debit card are few of the various projects I’ve worked upon at Paytm Payments Bank.</div>
                     </Row>
-                    <Row>
-                        <div>Software Engineer | Pratham Software</div>
-                        <div>May 2016 – Jan 2017</div>
-                        <div>Worked with client named Dataflow Group, Noida which deals in background verification and authentication services. Key responsibilities included managing Savvion BPM software which included designing custom workflows, development, deployment and post-delivery maintenance of the workflows.</div>
+                    <Row className="mb-4 experience-item">
+                        <div className="experience-title">Software Engineer | Pratham Software</div>
+                        <div className="fw-lighter">May 2016 – Jan 2017</div>
+                        <div className="lh-base fw-bold">Worked with client named Dataflow Group, Noida which deals in background verification and authentication services. Key responsibilities included managing Savvion BPM software which included designing custom workflows, development, deployment and post-delivery maintenance of the workflows.</div>
                     </Row>
-                    <Row>
-                        <div>Software Engineer | CarDekho, Girnarsoft</div>
-                        <div>Jun 2014 – May 2016</div>
-                        <div>Cardekho.com provides its visitors with explained car details, car reviews and e-commerce services to help them reach out to the automobile dealers. Major projects I’ve worked upon are Car Ranking algorithm, Trustmark Certification and general upgrades to performance and features of CarDekho Portal.</div>
+                    <Row className="mb-4 experience-item">
+                        <div className="experience-title">Software Engineer | CarDekho, Girnarsoft</div>
+                        <div className="fw-lighter">Jun 2014 – May 2016</div>
+                        <div className="lh-base fw-bold">Cardekho.com provides its visitors with explained car details, car reviews and e-commerce services to help them reach out to the automobile dealers. Major projects I’ve worked upon are Car Ranking algorithm, Trustmark Certification and general upgrades to performance and features of CarDekho Portal.</div>
                     </Row>
                 </Col>
             </Row>

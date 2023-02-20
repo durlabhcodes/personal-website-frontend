@@ -23,3 +23,12 @@ i {
 .education-degree {
     color: #5f7697;
 }
+
+.experience-title {
+    color: #5f7697;
+    font-weight: 900!important;
+}
+
+.experience-item > div {
+    line-height: 2rem;
+}
