@@ -32,3 +32,28 @@ i {
 .experience-item > div {
     line-height: 2rem;
 }
+.sw-developer {
+    display: none;
+}
+.hero-title {
+    font-size: 1rem;
+}
+
+@media (min-width: 768px)  {
+    .hero-title {
+        font-size: 4.5rem;
+    }
+
+    .sw-developer {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .border .border-dark .info-section {
+        border-right: solid 3px !important;
+    }
+}
+
+
+
