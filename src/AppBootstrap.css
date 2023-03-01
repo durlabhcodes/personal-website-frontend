@@ -50,8 +50,9 @@ i {
 }
 
 @media screen and (min-width: 992px) {
-    .border .border-dark .info-section {
+    .border .info-section {
         border-right: solid 3px !important;
+        border-bottom: 0px !important;
     }
 }
 

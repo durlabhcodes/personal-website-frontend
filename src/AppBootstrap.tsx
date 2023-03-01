@@ -7,8 +7,14 @@ export default function AppBootstrap() {
             <Container fluid className="py-3 px-5 mt-0" style={{backgroundColor:"#a9bbd2"}}>
                 <Container fluid className="p-3 bg-white">
                     <Container className="border border-2 border-dark p-5">
-                        <Row className="justify-content-center fw-bold hero-title">
+                        <Row className="d-none d-md-flex justify-content-center fw-bold hero-title">
                             Durlabh Sharma
+                        </Row>
+                        <Row className="d-flex d-md-none justify-content-center fs-1 fw-bold hero-title">
+                            Durlabh
+                        </Row>
+                        <Row className="d-flex d-md-none justify-content-center fs-1 fw-bold hero-title">
+                            Sharma
                         </Row>
                         <Row className="d-none d-md-flex justify-content-center fs-5 text-uppercase ">
                             Software Developer
@@ -19,7 +25,7 @@ export default function AppBootstrap() {
 
             </Container>
             <Row className="justify-content-center border-top border-dark">
-                <Col md={12} lg={6} className="border border-top-0 border-bottom-0 border-start-0 border-end-0 border-dark pt-5 info-section" style={{backgroundColor:"#d9e2ec"}}>
+                <Col md={12} lg={6} className="border border-0 border-bottom border-dark pt-5 info-section" style={{backgroundColor:"#d9e2ec"}}>
                     <Row className="personal-info-section">
                         <div className="section-title">
                             <span>Contact</span>
@@ -65,7 +71,8 @@ export default function AppBootstrap() {
                     </Row>
                     <Row className="personal-info-section">
                         <div className="section-title">
-                            <span>Certifications & Achievements</span>
+                            <span className="d-none d-md-flex">Certifications & Achievements</span>
+                            <span className="d-flex d-md-none">Certifications</span>
                         </div>
                         <Row>
                             <ul>
