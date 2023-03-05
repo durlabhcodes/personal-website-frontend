@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Senior Manager",
+    "company": "Morgan Stanley",
+    "from": "June 2020",
+    "to": "Present",
+    "description": "Working on Client Onboarding Project which initiates the onboarding of clients and handles various levels of checks and reviews from various teams driven by workflow management tool as its primary driving engine. Tech stack on Angular 8 and Spring Boot with Mongo as database."
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Priceline, Booking Holdings",
+    "from": "Nov 2018",
+    "to": "June 2020",
+    "description": "Involved in development of various tools and features for Hotels Team of Priceline.com. Current project involves creating a tool in React-Spring Boot stack which will be used by the team to handle the pricing and managing deals for Priceline Hotels."
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Paytm, One97",
+    "from": "Jan 2017",
+    "to": "Nov 2018",
+    "description": "Worked with core development team of Paytm Payments Bank. Debit Card issuance, Offline Cash in/Cash Out, Super Liquid Fixed Deposit, Add Money to Paytm Account via Debit card are few of the various projects I’ve worked upon at Paytm Payments Bank."
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Pratham Software",
+    "from": "May 2016",
+    "to": "Jan 2017",
+    "description": "Worked with client named Dataflow Group, Noida which deals in background verification and authentication services. Key responsibilities included managing Savvion BPM software which included designing custom workflows, development, deployment and post-delivery maintenance of the workflows."
+  },
+  {
+    "title": "Software Engineer",
+    "company": "CarDekho, Girnarsoft",
+    "from": "Jun 2014",
+    "to": "May 2016",
+    "description": "Cardekho.com provides its visitors with explained car details, car reviews and e-commerce services to help them reach out to the automobile dealers. Major projects I’ve worked upon are Car Ranking algorithm, Trustmark Certification and general upgrades to performance and features of CarDekho Portal."
+  }
+]

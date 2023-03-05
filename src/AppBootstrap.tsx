@@ -1,7 +1,14 @@
 import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import "./AppBootstrap.css";
+import Experience from "./components/experience";
 export default function AppBootstrap() {
+    const [experiences, setExperiences] = React.useState([{}]);
+
+    React.useEffect(() => {
+        fetch('data/Experience.json').then(res => res.json()).then(data => setExperiences(data))
+    }, []);
+
     return (
         <Container fluid className="justify-content-center border border-3 border-dark p-0">
             <Container fluid className="py-3 px-5 mt-0" style={{backgroundColor:"#a9bbd2"}}>
@@ -87,31 +94,13 @@ export default function AppBootstrap() {
                     <Row>
                         <div className="section-title" style={{marginBottom:"3rem"}}>Experience</div>
                     </Row>
-                    <Row className="mb-4 experience-item">
-                        <div className="experience-title">Senior Manager | Morgan Stanley</div>
-                        <div className="fw-lighter">June 2020 – Present</div>
-                        <div className="lh-base fw-bold">Working on Client Onboarding Project which initiates the onboarding of clients and handles various levels of checks and reviews from various teams driven by workflow management tool as its primary driving engine. Tech stack on Angular 8 and Spring Boot with Mongo as database.</div>
-                    </Row>
-                    <Row className="mb-4 experience-item">
-                        <div className="experience-title">Software Engineer | Priceline, Booking Holdings</div>
-                        <div className="fw-lighter">Nov 2018 – June 2020</div>
-                        <div className="lh-base fw-bold">Involved in development of various tools and features for Hotels Team of Priceline.com. Current project involves creating a tool in React-Spring Boot stack which will be used by the team to handle the pricing and managing deals for Priceline Hotels.</div>
-                    </Row>
-                    <Row className="mb-4 experience-item">
-                        <div className="experience-title">Software Engineer | Paytm, One97</div>
-                        <div className="fw-lighter">Jan 2017 – Nov 2018</div>
-                        <div className="lh-base fw-bold">Worked with core development team of Paytm Payments Bank. Debit Card issuance, Offline Cash in/Cash Out, Super Liquid Fixed Deposit, Add Money to Paytm Account via Debit card are few of the various projects I’ve worked upon at Paytm Payments Bank.</div>
-                    </Row>
-                    <Row className="mb-4 experience-item">
-                        <div className="experience-title">Software Engineer | Pratham Software</div>
-                        <div className="fw-lighter">May 2016 – Jan 2017</div>
-                        <div className="lh-base fw-bold">Worked with client named Dataflow Group, Noida which deals in background verification and authentication services. Key responsibilities included managing Savvion BPM software which included designing custom workflows, development, deployment and post-delivery maintenance of the workflows.</div>
-                    </Row>
-                    <Row className="mb-4 experience-item">
-                        <div className="experience-title">Software Engineer | CarDekho, Girnarsoft</div>
-                        <div className="fw-lighter">Jun 2014 – May 2016</div>
-                        <div className="lh-base fw-bold">Cardekho.com provides its visitors with explained car details, car reviews and e-commerce services to help them reach out to the automobile dealers. Major projects I’ve worked upon are Car Ranking algorithm, Trustmark Certification and general upgrades to performance and features of CarDekho Portal.</div>
-                    </Row>
+                    {experiences.map((experience:any) => <Experience
+                        key={experience.company}
+                        title={experience.title}
+                        company={experience.company}
+                        from={experience.from}
+                        to={experience.to}
+                        description={experience.description}></Experience>)}
                 </Col>
             </Row>
         </Container>
